@@ -1,6 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const Songs = require('../models/songs.js')
+const songsSeed = require('../models/seed.js')
+
+Songs.create(songsSeed, (err, data) => {
+  if (err) console.log(err.message)
+  console.log('added provided songs data')
+})
+
+
 
 // ** GET ROUTES ** //
 // app.get('/', (req, res) => {
