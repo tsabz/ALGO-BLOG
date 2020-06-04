@@ -5,14 +5,14 @@
         <title></title>
     </head>
     <body>
-        <h1><%=allSongs.title%></h1><br/>
-        <p><%=allSongs.entry%></p><br/>
+        <h2><%=allSongs.title%></h2><br/>
+        <h4><%=allSongs.entry%></h4><br/>
         <iframe src="<%= allSongs.song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br/>
 
 
           <a href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
         <nav>
-            <a href="/algoblog">Back to algoBlog Index</a>
+            <a href="/algoblog">Back to algoBlog</a>
         </nav>
     </body>
 </html>
