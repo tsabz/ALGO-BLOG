@@ -2,7 +2,7 @@
   "name": "playlist",
   "version": "1.0.0",
   "engines": {
-    "node" : "v14.0.0"
+    "node": "v14.0.0"
   },
   "description": "",
   "main": "server.js",
@@ -26,5 +26,6 @@
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.17"
-  }
+  },
+  "devDependencies": {}
 }

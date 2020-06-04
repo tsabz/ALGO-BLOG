@@ -20,10 +20,14 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false}))
 app.use(methodOverride('_method'))
-// routes
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+
+
+
+const songsControllers = require('./controllers/songs.js');
+app.use('/algoblog', songsControllers)
+
+
+
 app.listen(PORT, () => {
   console.log('Listening on port:', PORT)
 })
