@@ -61,6 +61,24 @@ router.delete('/:id', (req, res) => {
   })
 })
 
+// ** Edit Route ** //
+router.get('/:id/edit', (req, res) => {
+  Songs.findById(req.params.id, (error, Songs) => {
+    res.render(
+      'edit.ejs',
+      {
+        allSongs: Songs
+      }
+    )
+  })
+})
+
+// ** Update Route **
+router.put('/:id', (req, res) => {
+  Songs.findByIdAndUpdate(req.params.id, req.body, (err, updateModel) => {
+    res.redirect('/algoblog')
+  })
+})
 
 
 module.exports = router
