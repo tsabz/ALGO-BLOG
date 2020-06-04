@@ -26,6 +26,13 @@ app.use(methodOverride('_method'))
 const songsControllers = require('./controllers/songs.js');
 app.use('/algoblog', songsControllers)
 
+// ** CONNECTION ** //
+mongoose.connect('mongodb://localhost:27017/algoblog', ///port 27017 for the database
+{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false
+  },
+    () => {
+      console.log('The connection with mongod is established')
+})
 
 
 app.listen(PORT, () => {
