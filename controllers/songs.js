@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
       res.render(
         'show.ejs',
         {
-          allSongs: Songs
+          allSongs : Songs
         }
       );
     })
