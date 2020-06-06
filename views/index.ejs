@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<head>
+  <%- include ('./partials/head.ejs') %>
+</head>
   </head>
-  <body>
+  <body class="body">
+  <div class="jumbotron text-center">
     <h1> a l g o B l o g</h1>
+    </div>
   <div class="container">
     <%
       for(let i = 0; i < allSongs.length; i++){
@@ -18,10 +20,10 @@
           <input class="button" type="submit" value="Delete">
         </form>
       <% } %>
-      </div>
 
         <nav>
           <h2><a href="/algoblog/new">Create Yourz</a></h2>
         </nav>
+    </div>
   </body>
 </html>

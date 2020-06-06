@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
+<head>
+  <%- include ('./partials/head.ejs') %>
+</head>
     <body>
+      <div class="jumbotron text-center">
+        <h1> a l g o B l o g</h1>
+        </div>
+      <div class="container">
         <h2><%=allSongs.title%></h2><br/>
         <h4><%=allSongs.entry%></h4><br/>
         <iframe src="<%= allSongs.song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br/>
@@ -14,5 +17,6 @@
         <nav>
             <a href="/algoblog">Back to algoBlog</a>
         </nav>
+      </div>
     </body>
 </html>
