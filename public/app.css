@@ -1,22 +1,23 @@
 .container {
-  margin: 80px;
+  margin: 8em;
 }
 
 .container {
   display: grid
-  justify-content: space-around;
+
 }
 
-
 .jumbo {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color: #263333;
   padding: 80px;
   text-align: center;
 }
 
 h1 {
   font-size: 60px;
-  color: #263333;
+  /* color: #263333; */
+  color: lime;
   font-family: 'Orbitron', sans-serif;
 }
 
