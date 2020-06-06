@@ -1,3 +1,36 @@
 .container {
   margin: 80px;
 }
+
+.container {
+  display: grid
+  justify-content: space-around;
+}
+
+
+.jumbo {
+  background-color: whitesmoke;
+  padding: 80px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: #263333;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #263333;
+}
+
+iframe {
+  width 50px;
+}
+
+.button {
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Orbitron', sans-serif;
+}

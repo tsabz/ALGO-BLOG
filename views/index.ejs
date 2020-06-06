@@ -5,19 +5,21 @@
 </head>
   </head>
   <body class="body">
-  <div class="jumbotron text-center">
-    <h1> a l g o B l o g</h1>
+  <div class="jumbo">
+    <h1> a  l  g  o  B  l  o  g</h1>
     </div>
-  <div class="container">
+    <div class="container">
     <%
       for(let i = 0; i < allSongs.length; i++){
     %>
+      <div class="hover">
       <a href="/algoblog/<%=allSongs[i].id%>">
         <h2><%= allSongs[i].title%></h2>
       </a>
+      </div>
         <iframe src="<%= allSongs[i].song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <form action="/algoblog/<%= allSongs[i].id %>?_method=DELETE" method="POST">
-          <input class="button" type="submit" value="Delete">
+          <input class="button" type="submit" value="delete">
         </form>
       <% } %>
 
