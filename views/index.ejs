@@ -12,15 +12,19 @@
     <%
       for(let i = 0; i < allSongs.length; i++){
     %>
-      <div class="hover">
+    <div class="blog">
+      <div class="title index" >
       <a href="/algoblog/<%=allSongs[i].id%>">
-        <h2><%= allSongs[i].title%></h2>
+        <h2>[<%= allSongs[i].title%>]</h2>
       </a>
       </div>
+      <div class="iframe ">
         <iframe src="<%= allSongs[i].song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
         <form action="/algoblog/<%= allSongs[i].id %>?_method=DELETE" method="POST">
           <input class="button" type="submit" value="delete">
         </form>
+            </div>
       <% } %>
 
         <nav>

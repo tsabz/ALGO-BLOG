@@ -1,17 +1,38 @@
 .container {
   margin: 8em;
 }
-
-.container {
-  display: grid
-
+.showcontainer {
+  margin: 8em;
 }
 
+.newcontainer {
+  margin: 8em;
+}
+
+.editcontainer {
+  margin: 8em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.blog {
+  margin: 5em;
+}
+
+body{
+  background-color: black;
+}
 .jumbo {
   /* background-color: whitesmoke; */
   background-color: #263333;
   padding: 80px;
   text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
+box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
 }
 
 h1 {
@@ -20,18 +41,37 @@ h1 {
   color: lime;
   font-family: 'Orbitron', sans-serif;
 }
+h4 {
+  font-family: 'Orbitron', sans-serif;
+    color: lime;
+}
 
 h2 {
   font-family: 'Orbitron', sans-serif;
-  color: #263333;
+    color: lime;
+    text-decoration: none;
 }
 
-iframe {
-  width 50px;
+form {
+  color: lime;
+  font-family: 'Orbitron', sans-serif;
+  font-size: .20em;
 }
+
+
+
+/* .title {
+  margin-left: 30px;
+} */
 
 .button {
   background-color: black;
   color: whitesmoke;
   font-family: 'Orbitron', sans-serif;
+}
+
+
+.show2 {
+  text-align: center;
+  font-size: 30px
 }

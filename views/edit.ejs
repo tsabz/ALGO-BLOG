@@ -5,12 +5,12 @@
   <h1> a l g o B l o g</h1>
   </div>
 
-<div class="container">
+<div class="editcontainer">
   <h1>Edit Yourz</h1>
     <form action="/algoblog/<%= allSongs.id%>?_method=PUT" method="POST">
-      title: <input type="text" name="title" placeholder="<%=allSongs.title%>"><br/>
-      entry: <input type="textarea" name="entry" placeholder="<%=allSongs.entry%>"><br/>
-      song: <input type="text" name="song" placeholder="<%=allSongs.song%>"><br/>
+      Title: <input type="text" name="title" placeholder="<%=allSongs.title%>"><br/>
+      Entry: <input type="textarea" name="entry" placeholder="<%=allSongs.entry%>"><br/>
+      Song: <input type="text" name="song" placeholder="<%=allSongs.song%>"><br/>
     <input type="submit" name="" value="Submit Changes"/>
   </form>
     <a href="/algoblog/<%=allSongs.id%>">Back</a>
