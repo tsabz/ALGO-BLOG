@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "gilroy";
+    src: url("Radomir Tinkov - Gilroy-ExtraBold.otf") format("opentype");
+}
+
+
 .container {
   margin: 8em;
 }
@@ -29,22 +35,27 @@
 
 body{
   background-color: whitesmoke;
+  /* display: block;
+  overflow: auto; */
 }
 .jumbo {
+  display: block;
+  overflow: auto;
   /* background-color: whitesmoke; */
   background-color: #FFEDD0;
   padding: 80px;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(245,245,245, 0.8);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(245, 245, 245,1);
+box-shadow: 10px 10px 5px 0px rgba(245, 245, 2451);
 }
 
 h1 {
   font-size: 60px;
   /* color: #263333; */
   color: black;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "gilroy", sans-serif;
+  letter-spacing: 20px;
 }
 h4 {
   font-family: 'Roboto', sans-serif;
@@ -52,7 +63,7 @@ h4 {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "gilroy", sans-serif;
     color: black;
     text-decoration: none;
 }
