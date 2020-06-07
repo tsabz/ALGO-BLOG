@@ -2,14 +2,14 @@
     <%- include ('./partials/head.ejs') %>
 </head>
   <div class="jumbo">
-  <h1> a l g o B l o g</h1>
+  <h1> a l g o - B l o g</h1>
   </div>
 
 <div class="editcontainer">
   <h1>Edit Yourz</h1>
     <form action="/algoblog/<%= allSongs.id%>?_method=PUT" method="POST">
       Title: <input type="text" name="title" placeholder="<%=allSongs.title%>"><br/>
-      Entry: <input type="textarea" name="entry" placeholder="<%=allSongs.entry%>"><br/>
+      Entry: <input type="textarea" name="entry" rows="4" cols= "50" placeholder="<%=allSongs.entry%>"><br/>
       Song: <input type="text" name="song" placeholder="<%=allSongs.song%>"><br/>
     <input type="submit" name="" value="Submit Changes"/>
   </form>

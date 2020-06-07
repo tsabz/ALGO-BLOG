@@ -2,7 +2,12 @@
   margin: 8em;
 }
 .showcontainer {
-  margin: 8em;
+
+}
+
+
+.show4 {
+  text-align: center;
 }
 
 .newcontainer {
@@ -23,14 +28,14 @@
 }
 
 body{
-  background-color: black;
+  background-color: whitesmoke;
 }
 .jumbo {
   /* background-color: whitesmoke; */
-  background-color: #263333;
+  background-color: #FFEDD0;
   padding: 80px;
   text-align: center;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(245,245,245, 0.8);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
 box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
 }
@@ -38,27 +43,35 @@ box-shadow: 10px 10px 5px 0px rgba(0,204,71,1);
 h1 {
   font-size: 60px;
   /* color: #263333; */
-  color: lime;
+  color: black;
   font-family: 'Orbitron', sans-serif;
 }
 h4 {
-  font-family: 'Orbitron', sans-serif;
-    color: lime;
+  font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
-    color: lime;
+    font-family: 'Roboto', sans-serif;
+    color: black;
     text-decoration: none;
 }
 
 form {
-  color: lime;
-  font-family: 'Orbitron', sans-serif;
-  font-size: .20em;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
 
 
+a {
+  text-decoration: none;
+}
+
+input {
+  margin: 5em;
+  padding: .5em;
+}
 
 /* .title {
   margin-left: 30px;
@@ -74,4 +87,14 @@ form {
 .show2 {
   text-align: center;
   font-size: 30px
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+  float: right;
+
+}
+#likeamount {
+  font-family: 'Orbitron', sans-serif;
 }

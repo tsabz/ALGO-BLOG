@@ -16,7 +16,6 @@ const songsSeed = require('../models/seed.js')
 // })
 
 
-
 router.get('/new', (req, res) => {
   res.render('new.ejs')
 })
@@ -33,8 +32,16 @@ router.get('/', (req, res) => {
 });
 
 
+
+
+////////////////////////////////////////////////////
 router.post('/', (req, res)=>{
   console.log(`req.body ${JSON.stringify(req.body)}`);
+  // Add likes field to req.body with a default value
+    let blog = req.body;
+    //Add likes field to Blog
+    blog.likes = 0
+    console.log(`blog ${JSON.stringify(blog)}`);
     Songs.create(req.body, (error, createdSongs) => {
       if (error)
         console.log(error)
@@ -79,6 +86,22 @@ router.put('/:id', (req, res) => {
     res.redirect('/algoblog')
   })
 })
+
+
+
+///** like button route ** ///
+router.put('/:id/like', (req, res) => {
+  Songs.findByIdAndUpdate(
+    req.params.id,
+    {$inc: {
+      likes: +1
+      }
+    },
+    (err, updateModel) => {
+    res.redirect('/algoblog')
+  })
+})
+
 
 
 module.exports = router

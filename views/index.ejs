@@ -15,8 +15,14 @@
     <div class="blog">
       <div class="title index" >
       <a href="/algoblog/<%=allSongs[i].id%>">
-        <h2>[<%= allSongs[i].title%>]</h2>
+        <h2><%= allSongs[i].title%></h2>
       </a>
+      <div class="like">
+      <!-- <a class="likeicon" userId="<%=allSongs[i].id%>" onclink="updateLikes("<%=allSongs[i].id%>")">
+      <button class="fa fa-thumbs-o-up" onclick="likes('<%=allSongs[i].id%>')" type="button" name="button"><%= allSongs[i].likes%></button>
+      <i class="fa fa-thumbs-o-up" aria-hidden="true"><%= allSongs[i].likes%></i>
+      </a> -->
+      </div>
       </div>
       <div class="iframe ">
         <iframe src="<%= allSongs[i].song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -28,8 +34,21 @@
       <% } %>
 
         <nav>
-          <h2><a href="/algoblog/new">Create Yourz</a></h2>
+          <h2 class="createyourz"><a href="/algoblog/new">Create Yourz +</a></h2>
         </nav>
     </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- <script>
+      function updatelikes(id) {
+        id = $('.likeicon').attr('userId');
+        $.post('/index/' + id, function (response) {
+          $('fa-thumbs-o-up').text(response.likeCount); //your counter on a page
+    //and update likes counter with response
+        });
+        }
+      </script> -->
+
+<!-- https://stackoverflow.com/questions/39637482/like-button-add-and-subtract-on-database-nodejs-mongodb-mongoose-jquery -->
+
   </body>
 </html>
