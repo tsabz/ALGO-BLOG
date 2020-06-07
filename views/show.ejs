@@ -12,9 +12,8 @@
         <h2 class="show2"><%=allSongs.title%></h2><br/>
         <h4 class="show4"><%=allSongs.entry%></h4><br/>
         <div class="likebutton">
-          <h5><%=allSongs.likes%></h5>
         <form action="/algoblog/<%=allSongs.id%>/like?_method=PUT" method="POST">
-          <input id="likebutton" type="submit" value="like">
+          <input id="likebutton" type="submit" value="<%=allSongs.likes%>">
         </div>
         <iframe src="<%= allSongs.song%>" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br/>
           <a href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
