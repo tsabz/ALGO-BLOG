@@ -3,7 +3,7 @@
 <head>
   <%- include ('./partials/head.ejs') %>
 </head>
-  <body>
+  <body class="newbody">
       <div class="jumbo">
       <h1> ALGO BLOG</h1>
       </div>
@@ -11,13 +11,13 @@
     <h1>Hear2Listen</h1>
     <form action="/algoblog" method="POST">
         Title: <input type="text" name="title"><br/>
-        Entry: <input type="textarea" name="entry"><br/>
         Song: <input type="text" name="song"><br/>
+        Entry: <input class="entry" type="textarea" name="entry"><br/>
         <input type="submit" name="" value="Create AgloBlog"/>
     </form><br/>
+    </div>
     <nav>
     <a href="/algoblog">back to algoBlog</a>
     </nav>
-    </div>
   </body>
 </html>

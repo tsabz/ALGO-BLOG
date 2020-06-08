@@ -7,10 +7,10 @@
 .container {
   margin: 8em;
 }
-.showcontainer {
 
+.createyourz {
+  color: purple;
 }
-
 
 .show4 {
   text-align: center;
@@ -78,7 +78,7 @@ form {
 a {
   text-decoration: none;
   font-family: "gilroy", sans-serif;
-  color: white;
+  color: black;
 }
 
 input {
@@ -124,5 +124,27 @@ input {
 
 .showcontainer {
   background-color: whitesmoke;
+  margin: 80px;
+  border-radius: 30x;
+}
+
+.newcontainer {
+  background-color: whitesmoke;
+  margin: 80px;
+  padding: 10px;
+  align-content: center;
+}
+
+
+
+.entry {
+  padding: 80px;
+}
+
+.show {
+  color: white;
+}
+
+.bottomcontainer {
   margin: 80px;
 }

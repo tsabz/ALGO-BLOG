@@ -16,14 +16,16 @@
           <input id="likebutton" type="submit" value="LOVE: <%=allSongs.likes%>">
         </div>
       </div>
+        <div class="bottomcontainer">
         <iframe src="<%= allSongs.song%>" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </br>
       <br/>
-        <a href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
+        <a class="show" href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
         <br/>
           <nav>
-            <a href="/algoblog">Back to algoBlog</a>
+            <a class="show" href="/algoblog">Back to algoBlog</a>
           </nav>
+          </div>
       <script>
       function songlikes(id) {
         console.log(id);
