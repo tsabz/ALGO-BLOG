@@ -77,6 +77,8 @@ form {
 
 a {
   text-decoration: none;
+  font-family: "gilroy", sans-serif;
+  color: white;
 }
 
 input {
@@ -108,4 +110,19 @@ input {
 }
 #likeamount {
   font-family: 'Orbitron', sans-serif;
+}
+#likebutton {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+    float: right;
+}
+
+.showbody {
+  background-color: black;
+}
+
+.showcontainer {
+  background-color: whitesmoke;
+  margin: 80px;
 }

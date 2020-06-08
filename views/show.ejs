@@ -3,7 +3,7 @@
 <head>
   <%- include ('./partials/head.ejs') %>
 </head>
-    <body>
+    <body class="showbody">
         <div class="jumbo">
         <h1> ALGO BLOG</h1>
         </div>
@@ -13,14 +13,17 @@
         <h4 class="show4"><%=allSongs.entry%></h4><br/>
         <div class="likebutton">
         <form action="/algoblog/<%=allSongs.id%>/like?_method=PUT" method="POST">
-          <input id="likebutton" type="submit" value="<%=allSongs.likes%>">
+          <input id="likebutton" type="submit" value="LOVE: <%=allSongs.likes%>">
         </div>
-        <iframe src="<%= allSongs.song%>" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br/>
-          <a href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
-        <nav>
-            <a href="/algoblog">Back to algoBlog</a>
-        </nav>
       </div>
+        <iframe src="<%= allSongs.song%>" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </br>
+      <br/>
+        <a href="/algoblog/<%= allSongs.id %>/edit">Edit</a><br/>
+        <br/>
+          <nav>
+            <a href="/algoblog">Back to algoBlog</a>
+          </nav>
       <script>
       function songlikes(id) {
         console.log(id);
