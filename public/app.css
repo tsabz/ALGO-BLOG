@@ -134,9 +134,9 @@ input {
   font-family: 'Orbitron', sans-serif;
 }
 #likebutton {
-    font-family: 'Orbitron', sans-serif;
+      font-family: "gilroy", sans-serif;
     background-color: rgba(217, 0, 162, 0.9);
-    color:black;
+    color:white;
     float: right;
     letter-spacing: 5px;
     cursor: pointer;
