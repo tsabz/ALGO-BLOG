@@ -13,12 +13,13 @@
     <form action="/<%= allSongs.id%>?_method=PUT" method="POST">
       Title: <input type="text" name="title" placeholder="<%=allSongs.title%>" value="<%=allSongs.title%>"><br/>
       Song: <input type="text" name="song" placeholder="<%=allSongs.song%>" value="<%=allSongs.song%>"><br/>
-      Entry: <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="entry" placeholder="<%=allSongs.entry%>" value="<%=allSongs.entry%>"></textarea><br/>
+      Entry:<br/><br/> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="entry" placeholder="<%=allSongs.entry%>" value="<%=allSongs.entry%>"></textarea><br/>
 
-    <input type="submit" name="" value="Submit Changes"/>
+    <input class="button" type="submit" name="" value="Submit Changes"/>
+    <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
+      <input class="button" type="submit" value="Delete">
+    </form>
   </form>
-  <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
-    <input class="button" type="submit" value="Delete">
-  </form>
-    <a href="/<%=allSongs.id%>">Back</a>
+    <h2 class="createyourz"><a class="createyourz" href="/<%=allSongs.id%>">Back</a></h2>
+
 </div>
