@@ -7,15 +7,15 @@
 
 <div class="editcontainer">
   <h1>Edit Yourz</h1>
-    <form action="/algoblog/<%= allSongs.id%>?_method=PUT" method="POST">
+    <form action="/<%= allSongs.id%>?_method=PUT" method="POST">
       Title: <input type="text" name="title" placeholder="<%=allSongs.title%>" value="<%=allSongs.title%>"><br/>
       Song: <input type="text" name="song" placeholder="<%=allSongs.song%>" value="<%=allSongs.song%>"><br/>
       Entry: <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="entry" placeholder="<%=allSongs.entry%>" value="<%=allSongs.entry%>"></textarea><br/>
 
     <input type="submit" name="" value="Submit Changes"/>
   </form>
-  <form action="/algoblog/<%=allSongs.id%>?_method=DELETE" method="POST">
+  <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
     <input class="button" type="submit" value="Delete">
   </form>
-    <a href="/algoblog/<%=allSongs.id%>">Back</a>
+    <a href="/<%=allSongs.id%>">Back</a>
 </div>
