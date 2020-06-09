@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
 <head>
   <%- include ('./partials/head.ejs') %>
-    <%- include ('./partials/footer.ejs') %>
 </head>
 
   <body class="body">
   <div class="jumbo">
     <h1>ALGO BLOG</h1>
     </div>
-    <div class="container">
+    <div class="songscontainer">
     <%
       for(let i = 0; i < allSongs.length; i++){
     %>
@@ -76,7 +75,7 @@
       <div class="col-md-9 col-xs-12 footer__partners"><img src="https://www.authenticireland.com/wp-content/uploads/2018/04/Bottom_Trust2.png"></div>
 
 
-
+    <%- include ('./partials/footer.ejs') %>
 
   </body>
 </html>
