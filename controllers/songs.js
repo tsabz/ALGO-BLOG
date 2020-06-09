@@ -46,7 +46,7 @@ router.post('/', (req, res)=>{
       if (error)
         console.log(error)
       console.log(`Success creating a Blog`);
-      res.redirect('/algoblog')
+      res.redirect('/')
     })
 });
 
@@ -64,7 +64,7 @@ router.get('/:id', (req, res) => {
 //////**** delete route **** //////
 router.delete('/:id', (req, res) => {
   Songs.findByIdAndRemove(req.params.id, (error, deletedSongs) => {
-    res.redirect('/algoblog')
+    res.redirect('/')
   })
 })
 
@@ -83,7 +83,7 @@ router.get('/:id/edit', (req, res) => {
 // ** Update Route **
 router.put('/:id', (req, res) => {
   Songs.findByIdAndUpdate(req.params.id, req.body, (err, updateModel) => {
-    res.redirect('/algoblog')
+    res.redirect('/')
   })
 })
 
@@ -98,7 +98,7 @@ router.put('/:id/like', (req, res) => {
       }
     },
     (err, updateModel) => {
-    res.redirect('/algoblog')
+    res.redirect('/')
   })
 })
 

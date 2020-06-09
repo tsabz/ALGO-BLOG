@@ -24,7 +24,7 @@ app.use(methodOverride('_method'))
 
 
 const songsControllers = require('./controllers/songs.js');
-app.use('/algoblog', songsControllers)
+app.use('/', songsControllers)
 
 // ** CONNECTION ** //
 mongoose.connect(MONGODB_URI , ///port 27017 for the database
