@@ -17,12 +17,14 @@
       Entry:<br/><br/> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="entry" placeholder="<%=allSongs.entry%>" value="<%=allSongs.entry%>"></textarea><br/>
 
       <input class="editsubmit" type="submit" name="" value="SUBMIT CHANGES"/>
-    <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
-      <input class="editsubmit" type="submit" value="Delete">
-    </form>
-      <h2 class="createyourz"><a class="createyourz" href="/<%=allSongs.id%>">Back</a></h2>
 
   </form>
+
+  <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
+    <input class="editsubmit" type="submit" value="Delete">
+  </form>
+
+        <h2 class="createyourz"><a class="createyourz" href="/<%=allSongs.id%>">Back</a></h2>
 
 
 </div>
