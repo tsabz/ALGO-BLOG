@@ -11,6 +11,13 @@
   border-radius: 10px 0 0 10px;
 } */
 
+.editsubmit {
+  font-family: "gilroy", sans-serif;
+  background-color: BLACK;
+  color: white;
+  letter-spacing: 5px;
+}
+
 .titleindex {
   width: 300px;
   flex-wrap: wrap;
