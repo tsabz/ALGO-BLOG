@@ -11,6 +11,15 @@
   border-radius: 10px 0 0 10px;
 } */
 
+.titleindex {
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.create {
+  background: white;
+  color: red;
+}
 
 .newphoto{
   float: right;
@@ -151,6 +160,8 @@ input {
   opacity: .8;
   margin: 80px;
   border-radius: 30x;
+  padding: 30px;
+  letter-spacing: 1px;
 }
 
 .newcontainer {

@@ -17,13 +17,13 @@
         </div>
       </div>
         <div class="bottomcontainer">
-        <iframe src="<%= allSongs.song%>?autoplay=1" allow="autoplay" width="700" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="<%= allSongs.song.replace(/track/,'embed/track').replace(/watch\?v\=/,'embed/')%>?autoplay=1" allow="autoplay" width="700" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </br>
       <br/>
         <h2 class="createyourz"><a class="createyourz" href="/<%= allSongs.id %>/edit">Edit</a><br/>
         <br/>
           <nav>
-            <h3 class="createyourz"><a class="createyourz" href="/">Back to algoBlog</a>
+            <h3 class="createyourz"><a class="createyourz" href="/">Back to ALGO BLOG</a>
           </nav>
           </div>
       <script>

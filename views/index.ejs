@@ -19,7 +19,7 @@
       </a>
       </div>
       <div class="iframe ">
-        <iframe src="<%= allSongs[i].song%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="<%= allSongs[i].song.replace(/track/,'embed/track').replace(/watch\?v\=/,'embed/')%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
             </div>
       <% } %>
