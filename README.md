@@ -1,7 +1,5 @@
 # ALGO BLOG
 
-# ALGO BLOG
-
 is a platform where users are able write and share their thoughts and as well as music or videos on anything they choose.  
 
 ## Features
