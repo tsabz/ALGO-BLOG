@@ -11,11 +11,12 @@
             </div>
   <h1>Edit Yourz</h1>
     <form action="/<%= allSongs.id%>?_method=PUT" method="POST">
+        <fieldset class="account-info">
       Title: <input type="text" name="title" placeholder="<%=allSongs.title%>" value="<%=allSongs.title%>"><br/>
       Song: <input type="text" name="song" placeholder="<%=allSongs.song%>" value="<%=allSongs.song%>"><br/>
       Entry:<br/><br/> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="entry" placeholder="<%=allSongs.entry%>" value="<%=allSongs.entry%>"></textarea><br/>
-
   </form>
+  </fieldset>
     <input type="submit" name="" value="Submit Changes"/>
   <form action="/<%=allSongs.id%>?_method=DELETE" method="POST">
     <input type="submit" value="Delete">
