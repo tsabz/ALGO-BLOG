@@ -1,4 +1,4 @@
-# Playlist
+# ALGO BLOG
 
 #ALGO BLOG
 
